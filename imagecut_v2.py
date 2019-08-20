@@ -44,7 +44,7 @@ def main():
     #既にフォルダが作成されていれば無視して上書きされる
 
     # make_new_dirs("test_set")
-    #テスト用の画像を作成するときは，41行目をコメントアウトして，45行目の "# "を消してください．
+    #テスト用の画像を作成するときは，42行目をコメントアウトして，46行目の "# "を消してください．
 
     productions = Parallel(n_jobs=-1, backend='threading')(delayed(fiv_hund_images)(b, img_set) for b in range(num_figures))
     #画像のセット数 × 500枚のランダムトリミング画像の生成
